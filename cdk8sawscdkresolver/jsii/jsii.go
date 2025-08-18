@@ -14,7 +14,7 @@ import (
 	cdk8s      "github.com/cdk8s-team/cdk8s-core-go/cdk8s/v2/jsii"
 )
 
-//go:embed cdk8s-awscdk-resolver-0.0.341.tgz
+//go:embed cdk8s-awscdk-resolver-0.0.342.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -26,5 +26,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@cdk8s/awscdk-resolver", "0.0.341", tarball)
+	_jsii_.Load("@cdk8s/awscdk-resolver", "0.0.342", tarball)
 }
